@@ -1,0 +1,18 @@
+= PermutationGenerator
+== Install
+  $ sudo gem install permutation_generator
+
+== Usage
+  require 'rubygems'
+  require 'permutation_generator'
+  PermutationGenerator.new(2, ["r", "b", "g"]).each do |element|
+    p element
+  end
+  
+  # output -- ["r", "r"] ["r", "b"] ["r", "g"] ["b", "r"] ["b", "b"] ["b", "g"] ["g", "r"] ["g", "b"] ["g", "g"]
+  
+  
+Copyright (c) 2010  MIT-LICENSE
+Author : Wayne Deng
+Web    : http://blog.waynedeng.com
+Email  : wayne.deng.cn(AT).com
